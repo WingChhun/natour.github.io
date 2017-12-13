@@ -1,9 +1,11 @@
 .heading-primary {
+    //header1 
     color: $color-white;
     text-transform: uppercase;
     backface-visibility: hidden;
     margin-bottom: 6rem;
     &--main {
+        //main header, with animation
         letter-spacing: 3.5rem;
         display: block;
         font-size: 6rem;
@@ -11,6 +13,7 @@
         animation: moveInLeft 0.8s ease-out;
     }
     &--sub {
+        //sub header with animation
         display: block;
         font-size: 2rem;
         font-weight: 700;
@@ -20,6 +23,7 @@
 }
 
 body {
+    //set font, default font-size, line-heights, color...
     font-family: 'Lato', san-serif;
     font-weight: 400;
     font-size: 1.6rem;
@@ -29,6 +33,7 @@ body {
 }
 
 .heading-secondary {
+    //for h2 
     font-size: 3.5rem;
     text-transform: uppercase;
     font-weight: 700;
@@ -39,20 +44,24 @@ body {
     transition: all .2s;
     letter-spacing: .2rem;
     &:hover {
+        //on hover, give wacky transform affect, -> see about section
         transform: skewY(2deg) skewX(15deg) scale(1.1);
         text-shadow: .5rem 1rem 2rem rgba($color-black, .2);
     }
 }
 
 .heading-tertiary {
+    //header 3
     font-size: 1.6rem;
     font-weight: 700;
     text-transform: uppercase;
 }
 
 .paragraph {
+    //paragraphs
     font-size: 1.6rem;
     &:not(:last-child) {
+        //last child does not have margin
         margin-bottom: 3rem;
     }
 }
