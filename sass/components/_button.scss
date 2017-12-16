@@ -29,9 +29,6 @@
                     z-index: -1;
                     transition: all .4s;
                 }
-                &--white::after {
-                    background-color: white;
-                }
                 &:hover::after {
                     transform: scaleX(1.4) scaleY(1.6);
                     opacity: 0;
@@ -40,6 +37,17 @@
                     background-color: $color-white;
                     color: $color-gray-dark;
                     padding: 1.5rem 4rem;
+                    &::after {
+                        background-color: $color-white;
+                    }
+                }
+                &--green {
+                    background-color: $color-primary;
+                    color: $color-white;
+                    padding: 1.5rem 4rem;
+                    &::after {
+                        background-color: $color-primary;
+                    }
                 }
                 &--animated {
                     /*Give button animation a  delay */
