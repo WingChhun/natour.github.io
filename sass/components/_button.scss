@@ -1,19 +1,23 @@
             //Buttons
             .btn {
                 &:link,
-                &-visited {
+                &:visited,
+                & {
                     display: inline-block;
                     text-transform: uppercase;
                     text-decoration: none;
                     border-radius: 50rem;
                     transition: all .2s;
-                    position: relative;
+                    position: relative; //change for button element
+                    border: none;
+                    cursor: pointer;
                 }
                 &:hover {
                     transform: translateY(-.4rem);
                     box-shadow: 0 .4rem .2rem rgba($color-black, .2);
                 }
-                &:active {
+                &:active,
+                &:focus {
                     transform: translateY(-.2rem);
                     box-shadow: 0 .2rem .5rem rgba($color-black, 0.2);
                 }

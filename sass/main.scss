@@ -12,9 +12,14 @@
 @import 'components/_composition.scss';
 @import 'components/_feature-box.scss';
 @import 'components/_card.scss';
+@import 'components/_story.scss';
+@import 'components/_video.scss';
+@import 'components/_form.scss';
+@import 'components/__navigation.scss';
 //pages
 @import 'pages/home';
 //layout
+@import 'layout/footer';
 @import 'layout/header';
 @import 'layout/grid';
 
